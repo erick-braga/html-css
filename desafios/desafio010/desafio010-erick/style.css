@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bebas+Neue&family=Lexend:wght@100..900&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rethink+Sans:ital,wght@0,600;1,600&display=swap');
+
+@font-face {
+    font-family: "idroid";
+    src: url(fonts/idroid.otf) format("opentype");
+}
+
+/* Códigos de cores
+
+#C5EBD6 verde mais claro
+
+ #B3EBA
+
+#3DDC84
+
+
+#2FAB65
+
+
+#063D1E MAIS escuro*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0  ;
+    min-width: 400px;
+    max-width: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E7E5C1;
+    font-size: 1.1em;
+    
+}
+header {
+    
+}
+header > h1 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 3em;
+}
+header > p {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.4px;
+}
+#degrade {
+    background-image: linear-gradient(to top, #063D1E, 
+    #2FAB65);
+    padding-top: 50px;
+}
+nav {
+    padding-bottom: 18.5px;
+}
+
+.nav-link {
+    display: inline;
+    color: #C5EBD6;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    
+    
+}
+#espaco-left {
+    margin-left: 20px;
+}
+.nav-link:hover {
+    background-color: #2FAB65;
+    border-radius: 10px;
+    color: #063D1E;
+}
+main {
+    background-color: white;
+    margin: auto;
+    width: 1100px;
+    padding: 30px 15px 15px 15px;
+    box-shadow: 0px 0px 13px 0px black;
+    border-radius: 0px 0px 14px 14px;
+}
+.links-ext /* Aqueles links externos */{
+    background-color: #89DFB0;
+    color:  #063D1E;
+    text-decoration: none;
+    padding: 3px;
+    font-weight: bold;
+}
+article > h1 {
+    font-family: Idroid, sans-serif;
+    color: 
+    #063D1E;
+}
+article > p {
+    text-indent: 20px;
+    line-height: 2em;
+}
+.negrito-texto/* Texto em negrito e verde escuro, para dar destaque */ {
+    color:  #063D1E;
+    font-weight: bold;
+}
+.subtitulo {
+    font-family: Idroid, sans-serif;
+    background-image: linear-gradient(to right, #3DDC84, #ffffff );
+    color: #063D1E;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+#no-redimen {
+    display: block;
+    margin: auto;
+    width: auto;
+}
+aside {
+    background-color:#063D1E;
+    border-radius: 30px;
+}
+#fundo-top > h2{
+    color: white;
+    background-color: #063D1E;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 10px 7px 14px;
+    margin: auto;
+}
+#fundo-bottom {
+    background-color: #80E2AA;
+    padding: 15px;
+    text-indent: 20px;
+    line-height: 2em;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+}
+.link-cert {
+    color: #84ffb9
+}
+.lista-aside {
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+}
+#sombra-fundo {
+    box-shadow: 5px 2px 17px black;
+}
+#texto-final {
+    margin: 20px auto 40px auto;
+    text-align: center;
+}
+footer {
+    background-color: #063D1E;
+    color: white;
+    padding: 10px;
+}
+footer > p {
+    text-align: center;
+}
