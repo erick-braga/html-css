@@ -1,47 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento</title>
+    <title>Document</title>
     <style>
-        * {
-            margin: 0;
-        }
+        * {}
+
         #container {
-            margin: 10px;
-            width: 100%;
-            background-image: url(images/target001.png);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-color: chartreuse;
+            width: 99%;
+            height: 96vh;
+            background-color: burlywood;
             padding: 10px;
-            height: 95vh;
-            position: relative;
-        }
-        #conteudo {
             background-image: url(images/target001.png);
-            background-size: 100% 100%;
-            background-position: center center;
             background-repeat: no-repeat;
-            width: 600px;
-            background-color: chocolate;
+            background-position: center center;
+            background-size: 100% 100%;
+            position: relative;
+            
+        }
+
+        #conteudo {
+            background-color: #665846;
+            width: 700px;
             height: 300px;
+            background-image: url(images/target001.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% 100%;
             position: absolute;
+
             top: 50%;
             left: 50%;
-
-    
             
-           
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
+
 <body>
     <section id="container">
         <article id="conteudo">
-            <!-- Tem que seguir, obrigatoriamente, essa ordem -->
+           
         </article>
     </section>
 </body>
+
 </html>
