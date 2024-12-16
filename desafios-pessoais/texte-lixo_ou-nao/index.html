@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        main {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 30px;
+            text-shadow: 2px 2px 2px black;
+            color: white;
+            font-size: 1.5em;
+            letter-spacing: 1.6px;
+            line-height: 30px;
+            text-align: justify;
+            padding: 20px;  
+        }
+
+        main img {
+            width: 100%;
+            margin: auto;
+        }
+
+        #d1 {
+            /* COnteiner */
+            max-height: 90vh;
+            background-color: rgba(0, 255, 255, 0.459);
+            background-image: url(https://cdn.pixabay.com/photo/2016/09/19/21/50/sun-flower-1681385_640.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: scroll;
+            opacity: 0.9;
+
+        }
+
+        div#d1>h2 {
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+            font-size: 3em;
+        }
+
+        #d2 {
+            height: 40vh;
+            background-color: rgba(255, 76, 76, 0.678);
+        }
+
+        #d3 {
+            /* COnteudo */
+            border: solid 2px black;
+            margin: auto;
+            height: 90px;
+            max-width: 400px;
+            border-radius: 20px;
+            background-color: beige;
+            position: relative;
+
+        }
+
+        #d3:hover {
+            background-color: yellow;
+            color: purple;
+        }
+
+        #d3>h3 {
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1"> <!-- Container -->
+        <h2>EVENTO ONLINE E GRATUITO</h2>
+        <br>
+        <div id="d3">
+            <h3>CLIQUE AQUI</h3>
+
+        </div>
+        <main>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quas officia fugit vero, asperiores velit
+                culpa. Porro quam architecto, deleniti odit eius officiis ducimus temporibus labore, quod est nihil
+                eveniet.
+
+            </p>
+            <br>
+            <picture>
+                <source media="(max-width: 400px)" srcset="imagens\joaninha-cropado-p.jpg" type="image/jpg">
+                <img src="imagens/joaninha-cropado.jpg" alt="">
+            </picture>
+        </main><!-- Conteúdo -->
+    </div>
+
+    <div id="d2"></div>
+
+</body>
+
+</html>
