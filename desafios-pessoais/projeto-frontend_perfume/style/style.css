@@ -20,17 +20,22 @@ body {
 }
 main {
     padding: 20px;
+  
+    
 }
-/* main { /* Container 
-    position: relative;
-    height: 96vh;
-} */
+#img {
+    background-image: url("../images/image-product-desktop.jpg");
+    width: 900px;
+    height: 900px;
+    border: 1px solid black;
+}
 section {
     max-width: 300px;
     background-color:white;
-    margin: 30vh auto;
+    margin: 20vh auto;
     padding: 30px;
     border-radius: 20px;
+ 
 
     /* left: 50%;
     right: 50%;
@@ -74,7 +79,7 @@ section p {
     border-radius: 10px;
     font-family: var(--font1);
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 sup {
     font-family: var(--font2);
@@ -91,5 +96,5 @@ sup {
     text-decoration: none;
 }
 #buy::before {
-    content: "\00A0\00A0\00A0\00A0\1F6D2";
+    content: "\1F6D2\00A0";
 } 
