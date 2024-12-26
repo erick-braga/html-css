@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de células</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            height: 400px;
+            border-collapse: collapse;
+            font-size: 1.6em;
+            color: rgb(66, 66, 66);
+            
+        }
+        tr {
+            text-align: center;
+        }
+        td {
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mesclando células de tabelas HTML</h1>
+    <table> <!-- Não vou usar aquela estrutura para tabelas grandes porque acho que não vai ser necessário! -->
+    <tr>
+        <td>A</td>
+        <td colspan="2">B</td>
+    </tr>
+    <tr>
+        <td rowspan="3">D</td>
+        <td>E</td>
+        <td rowspan="2">F</td>
+    </tr>
+    <tr>
+        <td>H</td>
+    </tr>
+    <tr>
+        <td colspan="2">M</td>
+    </tr>
+
+    </table>
+</body>
+
+</html>
