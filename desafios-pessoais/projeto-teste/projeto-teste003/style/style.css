@@ -1,0 +1,41 @@
+@charset "UTF_8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: url(https://st3.depositphotos.com/4278641/18473/i/450/depositphotos_184735426-stock-photo-background-black-satin-fabric.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    height: 100vh;
+}
+.content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+main {
+    width: 600px;
+    padding: 30px;
+    
+}
+#mulher {
+    border-radius: 4000px;
+    width: 600px;
+    margin: auto;
+}
+
+h1 {
+     color: white;
+    text-align: center;
+}

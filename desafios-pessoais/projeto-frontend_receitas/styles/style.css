@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --fonteyoung: "Young Serif", serif;
+    --fonteoutfit: "Outfit", serif;
+
+    
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* ----------------- */
+
+.container {
+    height: 100vh;
+    
+    position: relative;
+    
+}
+.content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* ----------------- */
+
+
+body {
+    background-color: var(--Stone100);
+    font-family: var(--fonteoutfit);
+}
+main {
+    background-color: white;
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    max-width: 640px;
+    min-height: 325px;
+    margin: auto;
+}
+
+#omelette /* omelette border and width */ {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* preparation box (aside box) */
+
+aside {
+    background-color: var(--Rose50);
+    padding: 0px 20px 20px 20px;
+    border-radius: 7px;
+    margin: 20px 0px;
+}
+aside h2 {
+    padding-top: 20px;
+}
+aside strong {
+    font-weight: 600;
+}
+aside h2 {
+    margin-bottom: 20px;
+}
+
+/*  ------------  */
+
+h1 {
+    font-family: var(--fonteyoung);
+    font-weight: 400;
+    margin: 20px 0px;
+}
+ul {
+    list-style-position: inside;
+}
+li {
+    margin: 10px;
+}
+li::marker {
+    color: var(--Brown800);
+}
+#margin {
+    color: var(--Brown800);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+h2 {
+    color: var(--Brown800);
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+/* ------------ table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+   margin-top: 20px;
+}
+td {
+    border: 1px solid rgba(0, 0, 0, 0.222);
+    padding: 15px 0px 15px 25px;
+    border-top: none ;
+    border-right: none ; 
+    border-left: none ;
+    color: var(--Stone600);
+}
+.info /* class for the grams information */ {
+    color: var(--Brown800);
+    font-weight: 800;
+}
