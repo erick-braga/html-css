@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+:root {
+    --fonte1: "Kumbh Sans", serif;
+
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+.content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* ----------------------------- */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: hsl(185, 75%, 39%) url(../images/bg-pattern-top.svg)  left ;
+    
+    font-family: var(--fonte1);
+    font-size: 18px;
+}
+/* ---------------------- */
+
+main {
+    background-color: white;
+    width: 600px;
+}
+
+main img {
+    width: 100%;
+}
+.info {
+    text-align: center;
+}
+#guy {
+    width: 100px;
+    border-radius: 50%;
+    display: block;    
+    margin: auto;
+    border: 4px solid black;
+}
