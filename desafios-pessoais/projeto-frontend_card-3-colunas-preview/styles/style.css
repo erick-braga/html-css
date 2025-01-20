@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:root {
+    --lexend: "Lexend Deca", serif;
+    --shoulders: "Big Shoulders Display", serif;
+
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+
+}
+
+body {
+    height: 100vh;
+    background-color: var(--very-light-gray);
+    font-size: 15px;
+    padding: 0px 20px;
+}
+
+.container {
+    display: flex;
+    height: 96vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------ */
+
+p {
+    color: var(--transparent-white);
+    text-align: left;
+    line-height: 30px;
+    font-size: 1.1em;
+    font-family: var(--lexend);
+    margin-bottom: 110px;
+}
+a {
+    color: var(--bright-orange);
+    background-color: var(--very-light-gray);
+    padding: 12px;
+    border-radius: 150px;
+    text-decoration: none;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    
+}
+a:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    transition: 0.3s;
+}
+h1 {
+    margin: 30px 0px;
+    font-size: 2.4em;
+}
+/* -------------------- */
+.item-1 {
+    background-color: var(--bright-orange);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.item-2 {
+    background-color: var( --dark-cyan);
+}
+.item-3 {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:  10px;
+}
+.item {
+    max-width: 240px;
+    
+    padding: 50px;
+    height: 450px;
+}
+.b2 {
+    color: var(--dark-cyan);
+}
+.b2:hover {
+    background-color: var(--dark-cyan);
+
+    transition: 0.3s;
+}
+.b3 {
+    color: var(--very-dark-cyan);
+}
+.b3:hover {
+    background-color: var(--very-dark-cyan);
+    transition: 0.3s;
+}
+h1 {
+    font-family: var(--shoulders);
+    color: white;
+    text-transform: uppercase;
+}
+
