@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro formulário</title>
     <style>
-        form {
-        }
+        form {}
     </style>
 </head>
+
 <body>
-    <form>
-        <p>Nome: <input type="text"></p> 
-        <p>Sobrenome <input type="text"></p>    
+    <form autocomplete="off" action="cadastro.php" method="get">
+        <p>
+        <label for="Nome">Nome:</label>
+        <input type="text" name="nome" id="Nome">
+        </p>
+        <p><label for="sobrenome">Sobrenome</label>
+            <input type="text" name="Sobrenome" id="sobrenome">
+        </p>
         <input type="submit" value="Clique">
     </form>
 </body>
+
 </html>

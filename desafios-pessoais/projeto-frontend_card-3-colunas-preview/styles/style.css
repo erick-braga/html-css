@@ -6,6 +6,7 @@
     padding: 0;
     border: 0;
 }
+
 :root {
     --lexend: "Lexend Deca", serif;
     --shoulders: "Big Shoulders Display", serif;
@@ -15,7 +16,8 @@
     --dark-cyan: hsl(184, 100%, 22%);
     --very-dark-cyan: hsl(179, 100%, 13%);
     --transparent-white: hsla(0, 0%, 100%, 0.75);
-    --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+    --very-light-gray: hsl(0, 0%, 95%);
+    /* (background, headings, buttons) */
 
 }
 
@@ -41,9 +43,10 @@ p {
     line-height: 30px;
     font-size: 1.1em;
     font-family: var(--lexend);
-    margin-bottom: 110px;
+    margin-bottom: ;
 }
-a {
+
+.container a {
     color: var(--bright-orange);
     background-color: var(--very-light-gray);
     padding: 12px;
@@ -52,56 +55,92 @@ a {
     display: inline-block;
     width: 110px;
     text-align: center;
-    
+
 }
-a:hover {
+
+.container a:hover {
     background-color: var(--bright-orange);
     color: var(--very-light-gray);
     border: 2px solid var(--very-light-gray);
     transition: 0.3s;
 }
+
 h1 {
     margin: 30px 0px;
     font-size: 2.4em;
 }
+
 /* -------------------- */
 .item-1 {
     background-color: var(--bright-orange);
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
+
 .item-2 {
-    background-color: var( --dark-cyan);
+    background-color: var(--dark-cyan);
 }
+
 .item-3 {
     background-color: var(--very-dark-cyan);
     border-top-right-radius: 10px;
-    border-bottom-right-radius:  10px;
+    border-bottom-right-radius: 10px;
 }
+
 .item {
     max-width: 240px;
-    
+
     padding: 50px;
-    height: 450px;
 }
+
 .b2 {
     color: var(--dark-cyan);
 }
+
 .b2:hover {
     background-color: var(--dark-cyan);
 
     transition: 0.3s;
 }
+
 .b3 {
     color: var(--very-dark-cyan);
 }
+
 .b3:hover {
     background-color: var(--very-dark-cyan);
     transition: 0.3s;
 }
+
 h1 {
     font-family: var(--shoulders);
     color: white;
     text-transform: uppercase;
 }
 
+
+@media (max-width: 821px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attribution {
+
+        position: fixed;
+        /* Fixa a posição */
+        bottom: 0;
+        /* Encosta no fundo */
+        left: 0;
+        /* Alinha à esquerda */
+        width: 100%;
+        /* Ocupa toda a largura */
+        /* Cor de fundo para destaque */
+        color: white;
+        /* Cor do texto */
+        text-align: center;
+        /* Centraliza o texto */
+        padding: 10px;
+        /* Espaçamento interno */
+    }
+}
