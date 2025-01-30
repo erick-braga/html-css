@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style/style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -13,6 +12,46 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    * {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      height: 96vh;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .item {
+      border: 1px solid black;
+    }
+    .item-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+      width: 400px;
+      
+    }
+    .item-2 {
+      width: 400px;
+      padding: 30px;
+      padding-left: 20px;
+    }
+    img {
+      width: 400px;
+      height: auto;
+    }
+
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -26,29 +65,22 @@
 
 <body>
 
-  <main> <!-- Container -->
-      
-      <div id="image"></div>
-    
-    <section>
-      <div id="text1">Perfume</div>
-      <h1 class="text2">Gabrielle Essence Eau De Parfum</h1>
-      <br>
-      <p class="text3">
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <br>
-      <p id="price">$149.99 <sup>$169.99 </sup></p>
+
+  <div class="container">
+    <div class="item-1 item">
+      <img src="images/image-product-desktop.jpg" alt="Image" id="img-product">
+    </div>
+    <div class="item-2 item">
+      A floral, solar and voluptuous interpretation composed by Olivier Polge,
+      Perfumer-Creator for the House of CHANEL.
+      $149.99
+      $169.99
+      Add to Cart
+    </div>
+  </div>
 
 
 
-      <a href="#" id="buy-entire">
-        <div id="buy">Add to Cart</div>
-      </a>
-    </section>
-
-  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/erick-braga/html-css" target="_blank">Eric Braga</a>.
