@@ -12,6 +12,15 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    :root {
+      --font1: "Montserrat", sans-serif;
+      --font2: "Fraunces", serif;
+    }
+
     ::-webkit-scrollbar {
       width: 0px;
     }
@@ -23,35 +32,57 @@
       box-sizing: border-box;
     }
 
+    body {
+      background-color: hsl(30, 38%, 92%);
+    }
+
     .container {
       display: flex;
       height: 96vh;
       justify-content: center;
       align-items: center;
-      
+
     }
-    .item {
-      border: 1px solid black;
-    }
+
+    .item {}
+
     .item-1 {
       display: flex;
       justify-content: center;
       align-items: center;
       object-fit: cover;
       width: 400px;
-      
+
     }
+
     .item-2 {
-      width: 400px;
       padding: 30px;
-      padding-left: 20px;
+      background-color: white;
+      padding-left: 40px;
+      width: 400px;
+      height: 600px;
     }
+
     img {
       width: 400px;
       height: auto;
     }
 
+    h2 {
+      font-family: var(--font1);
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    h1 {
+      font:700 3.2em var(--font2)
 
+    }
+    p {
+      color: hsl(228, 12%, 48%);
+      line-height: 30px;
+      font-size: 1.3em;
+      font-weight: 500;
+    }
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -59,6 +90,50 @@
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+     #price- {
+      font-family: var(--font2);
+      font-weight: 700;
+      color: hsl(158, 36%, 37%);
+    }
+    #price {
+      color: hsl(228, 12%, 48%);
+      text-decoration: line-through;
+      margin-left: 30px;
+      font-weight: 700;
+    }
+    #price- {
+      font-size: 3em;
+    }
+    .container2 {
+      display: flex;
+      align-items: center;
+    }
+    .container3 {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+    button {
+      color: white;
+      background-color: hsl(158, 36%, 37%);
+      width: 100%;
+      font-family: var(--font1);
+      font-weight: 700;
+      font-size: 1.3em;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      height: 100%; 
+      
+    }
+    .container3 img {
+      display: flex;
+      justify-content: center;
+      width: 20px;
+      margin-right: 20px;
     }
   </style>
 </head>
@@ -71,11 +146,19 @@
       <img src="images/image-product-desktop.jpg" alt="Image" id="img-product">
     </div>
     <div class="item-2 item">
-      A floral, solar and voluptuous interpretation composed by Olivier Polge,
-      Perfumer-Creator for the House of CHANEL.
-      $149.99
-      $169.99
-      Add to Cart
+      <h2>Perfume</h2>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <br>
+      <p>
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <br>
+      <div class="container2">
+        <span id="price-">$149.99</span>
+        <span id="price">$169.99</span>
+      </div>
+      <div class="container3"><button><img src="images/icon-cart.svg" alt="">Add to Cart</button></div>
     </div>
   </div>
 
