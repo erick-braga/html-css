@@ -44,8 +44,6 @@
 
     }
 
-    .item {}
-
     .item-1 {
       display: flex;
       justify-content: center;
@@ -73,16 +71,18 @@
       text-transform: uppercase;
       font-weight: 300;
     }
-    h1 {
-      font:700 3.2em var(--font2)
 
+    h1 {
+      font: 700 3.2em var(--font2)
     }
+
     p {
       color: hsl(228, 12%, 48%);
       line-height: 30px;
       font-size: 1.3em;
       font-weight: 500;
     }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -91,29 +91,35 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-     #price- {
+
+    #price- {
       font-family: var(--font2);
       font-weight: 700;
       color: hsl(158, 36%, 37%);
     }
+
     #price {
       color: hsl(228, 12%, 48%);
       text-decoration: line-through;
       margin-left: 30px;
       font-weight: 700;
     }
+
     #price- {
       font-size: 3em;
     }
+
     .container2 {
       display: flex;
       align-items: center;
     }
+
     .container3 {
       display: flex;
       align-items: end;
       justify-content: center;
     }
+
     button {
       color: white;
       background-color: hsl(158, 36%, 37%);
@@ -126,14 +132,67 @@
       display: flex;
       justify-content: center;
       margin-top: 30px;
-      height: 100%; 
-      
+      height: 100%;
+
     }
+
     .container3 img {
       display: flex;
       justify-content: center;
       width: 20px;
       margin-right: 20px;
+    }
+
+
+    @media (max-width: 818px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      img {
+        border-radius: 10px 10px 0px 0px;
+        margin-bottom: -10 0px;
+
+      }
+
+      .item {}
+
+      .item-1 {
+        margin-top: 100px;
+        margin-bottom: -10px;
+      }
+
+      .item-2 {
+        border-radius: 0px 0px 10px 10px;
+        margin-bottom: 40px;
+      }
+
+      .attribution {
+        margin-top: 80px;
+      }
+    }
+
+    @media (max-width: 417px) {
+      img {
+        width: 330px;
+
+      }
+
+      .item-1 {
+        margin-top: 200px;
+      }
+
+      .item-2 {
+        width: 330px;
+        height: 700px;
+        margin-bottom: 10px;
+      }
+
+      .attribution {
+        margin-top: 180px;
+
+      }
     }
   </style>
 </head>
@@ -143,8 +202,12 @@
 
   <div class="container">
     <div class="item-1 item">
-      <img src="images/image-product-desktop.jpg" alt="Image" id="img-product">
+      <picture>
+        <source media="(max-width: 818px)" srcset="images\image-product-mobile.jpg" type="image/jpg">
+        <img src="images/image-product-desktop.jpg" alt="Image" id="img-product">
+      </picture>
     </div>
+
     <div class="item-2 item">
       <h2>Perfume</h2>
       <h1>Gabrielle Essence Eau De Parfum</h1>
@@ -154,6 +217,7 @@
         Perfumer-Creator for the House of CHANEL.
       </p>
       <br>
+
       <div class="container2">
         <span id="price-">$149.99</span>
         <span id="price">$169.99</span>

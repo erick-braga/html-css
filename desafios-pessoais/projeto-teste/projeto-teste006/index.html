@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando formulários</title>
+    <style>
+        body {
+            background: #d1fff0;
+        }
+
+        main {
+            border: 1px solid black;
+            max-width: 600px;
+            text-align: center;
+            padding: 30px;
+            margin: auto;
+            border-radius: 30px;
+            background-color: aquamarine;
+        }
+
+        form {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Cadastro de DEV's</h1>
+        <p>Complete suas infromações</p>
+        <form action="cadastro.php" autocomplete="on" method="get">
+            <div>
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome">
+            </div>
+            <div>
+                <label for="isob">Sobrenome</label><br>
+                <input type="text" name="sobrenome" id="isob">
+            </div>
+            <div>
+                <label for="iemail">Email</label><br>
+                <input type="email" name="email" id="iemail">
+            </div>
+            <div>
+                <input type="radio" name="dev" id="front"><label for="front">Front-end</label></input><br>
+                <input type="radio" name="dev" id="back"><label for="front">Back-end</label></input><br>
+                <input type="radio" name="dev" id="full"><label for="front">Fullstack</label></input>
+            </div>
+            <div>
+                <input type="checkbox" name="html" id="ehtml"><label for="ehtml">HTML</label>
+                <input type="checkbox" name="css" id="ecss"><label for="ecss">CSS</label>
+                <input type="checkbox" name="java" id="ejava"><label for="ejava">Java</label>
+                <input type="checkbox" name="php" id="ephp"><label for="ephp">PHP</label>
+                <input type="checkbox" name="cmais" id="ecmais"><label for="ecmais">C#</label>
+                <input type="checkbox" name="python" id="epython"><label for="epython">Python</label>
+                <input type="checkbox" name="javas" id="ejavas"><label for="ejavas">Javascript</label>
+            </div>
+            <div>
+                <label for="iexp">Conte mais sobre sua expreriência:</label><br>
+                <textarea name="exp" id="iexp" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
