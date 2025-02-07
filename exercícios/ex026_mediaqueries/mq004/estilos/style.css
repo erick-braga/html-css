@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    box-sizing: border-box;
+    
+}
+
+html {
+    height: 100vh;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    margin-top: 40px;
+}
+
+body {
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#phone {
+    display: block;
+    margin: auto;
+}
+
+#tablet {
+    display: none;
+}
+
+#print {
+    display: none;
+}
+
+#pc {
+    display: none;
+}
+
+#tv {
+    display: none;
+}
