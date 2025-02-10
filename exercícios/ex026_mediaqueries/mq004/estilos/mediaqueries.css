@@ -1,1 +1,122 @@
 @charset "UTF-8";
+
+/*  Vamos ter várias media queries, uma para cada coisinha... */
+@media print {
+    #phone {
+        display: none;
+
+    }
+
+    #tablet {
+
+    }
+
+    #print {
+        display: block;
+        margin: auto;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* tablets */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone {
+        display: none;
+
+    }
+
+    #tablet {
+        display: block;
+        margin: auto;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Laptops */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone {
+        display: none;
+
+    }
+
+    #tablet {}
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+        margin: auto;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Telas gigantes */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+
+    }
+
+    #phone {
+        display: none;
+
+    }
+
+    #tablet {}
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+
+    }
+
+    #tv {
+        display: block;
+
+        margin: auto;
+    }
+
+    main {
+        width: 700px;
+    }
+}

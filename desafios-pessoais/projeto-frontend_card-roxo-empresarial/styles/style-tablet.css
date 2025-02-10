@@ -1,37 +1,40 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .container {
         flex-direction: column-reverse;
     }
+    * {
+     box   
+    }
 
     .item-2 {
-        width: 300px;
-        height: 200px;
-        background-image: url(../images/image-header-mobile.jpg);
+        max-width: 470px;
         background-size: cover;
-    }
 
-    .item-2,
+        border-radius: 15px 15px 0px 0px;
+            margin-top: 80px;
+    }
     #img-effect {
         border-radius: 15px 15px 0px 0px;
+        max-width: 470px;
     }
 
-    #img-effect {
-        width: 300px;
-        height: 200px;
-    }
 
     .item-1 {
-        width: 300px;
-        padding: 0px;
+        width: 470px;
+        height: 2000px;
         padding: 40px 20px;
-        padding-bottom: 20px;
+        padding-bottom: 80px;
         text-align: center;
         font-size: 14px;
         border-radius: 0px 0px 15px 15px;
-    }
 
+        margin-bottom: 200px;
+
+    }
+    .attribution {
+    }
     p {
         margin-bottom: 40px;
     }
@@ -48,4 +51,3 @@
     }
 
 }
-
