@@ -1,5 +1,50 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .item-2 {
+        max-width: 470px;
+        background-size: cover;
+
+        border-radius: 15px 15px 0px 0px;
+            margin-top: 80px;
+    }
+    #img-effect {
+        border-radius: 15px 15px 0px 0px;
+        max-width: 470px;
+    }
+
+
+    .item-1 {
+        width: 470px;
+        
+        padding: 40px 20px;
+        padding-bottom: 470px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 0px 0px 15px 15px;
+
+
+    }
+    .attribution {
+        margin-top: 200px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+
+    .stats {
+
+        margin-bottom: 0px;
+    }
+
+    .container-section2 {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
 
 }   

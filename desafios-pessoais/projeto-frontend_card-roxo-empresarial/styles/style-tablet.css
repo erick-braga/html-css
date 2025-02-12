@@ -4,9 +4,6 @@
     .container {
         flex-direction: column-reverse;
     }
-    * {
-     box   
-    }
 
     .item-2 {
         max-width: 470px;
@@ -23,17 +20,17 @@
 
     .item-1 {
         width: 470px;
-        height: 2000px;
+        
         padding: 40px 20px;
-        padding-bottom: 80px;
+        padding-bottom: 470px;
         text-align: center;
         font-size: 14px;
         border-radius: 0px 0px 15px 15px;
 
-        margin-bottom: 200px;
 
     }
     .attribution {
+        margin-top: 200px;
     }
     p {
         margin-bottom: 40px;
