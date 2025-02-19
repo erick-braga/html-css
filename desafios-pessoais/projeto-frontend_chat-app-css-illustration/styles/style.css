@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pale-violet: hsl(276, 100%, 81%); /* Sub-heading at the top of the app UI */
+    --moderate-violet: hsl(276, 55%, 52%); /* Chat on the left */
+    --desaturated-dark-violet: hsl(271, 15%, 43%); /* Chat on the right */
+    --grayish-blue: hsl(206, 6%, 79%); /* Placeholder text */
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%); /* Main heading */
+    --dark-grayish-violet: hsl(270, 7%, 64%); /* Paragraph */
+  }
+body, html {
+    background-image: url(../images/);
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+#fone {
+    background-color: white;
+    border-radius: 10%;
+    width: 350px;
+    margin: auto;
+    height: 600px;
+    padding: 20px;
+}
+#header1 {
+    background-color: var(--moderate-violet);
+    color: white;
+    display: flex;
+}
+#user {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 0px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
