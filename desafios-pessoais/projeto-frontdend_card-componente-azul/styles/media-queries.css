@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 626px) {
+        main {
+            max-width: 560px;
+
+        }
+}

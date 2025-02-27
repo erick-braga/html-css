@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-flow: row nowrap;
+        margin: 0;
+
+    }
+    .item-3 p  {
+
+    }
+    .item {
+        max-width: 350px;
+        min-height: 500px;
+    }
+    .button {
+        margin-top: 8.5rem;
+    }
+/*     .b3 {
+        margin-top: 7rem;
+    } */
+    .b3 {
+    }
+    .item-1 {
+        border-radius: 10px 0px 0px 10px;
+        display: block;
+            
+    }
+    .teste {
+        display: flex;
+        align-items: flex-end;
+    }
+    .item a {
+        
+    }
+    .item-3 {
+        
+        border-radius: 0px 10px 10px 0px;
+
+
+    }
+  
+}
