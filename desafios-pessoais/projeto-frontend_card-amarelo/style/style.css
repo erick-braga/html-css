@@ -15,37 +15,33 @@
     padding: 0;
     border: 0;
 
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 body {
     font-family: var(--fonte1);
     background-color: hsl(47, 88%, 63%);
-    padding: 0px 20px;
-    font-size: 16px;
+    padding: 0px 30px;
+    width: 96vw;
+    font-size: 16px;    
 }
 
 
 /* Centering div's */
 .container {
-    position: relative;
-    height: 98vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.content {
-    position: absolute;
 
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
 /* ----- */
 
-
+.item {
+    flex-basis: 370px;
+    flex-shrink: 1;
+}
 
 main {
     background-color: white;
-    width: 370px;
     border: 2px solid black;
     border-radius: 19px;
     padding: 23px;

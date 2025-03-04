@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            transition: 2s;
+        }
+
+        header {
+            padding: 30px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            list-style-position: inside;
+        }
+
+        .itens {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-direction: row wrap;
+            width: 800px;
+        }
+
+        a {
+            background-color: rgb(253, 180, 70);
+            flex: auto;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 617px) {
+            .itens {
+                gap: 10px;
+                flex-direction: column;
+                height: 500px;
+            }
+        }
+
+        main {
+            margin: 10px;
+            background-color: aquamarine;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+
+
+        <div class="itens">
+            <a href="#" class="item">ITEM</a>
+            <a href="#" class="item">ITEM</a>
+            <a href="#" class="item">ITEM</a>
+            <a href="#" class="item">ITEM</a>
+            <a href="#" class="item">ITEM</a>
+            <a href="#" class="item">ITEM</a>
+        </div>
+
+    </header>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat cumque dolore aliquam. Deleniti fugiat
+            commodi, accusantium dolorem quaerat est quibusdam alias repellat nam, voluptate, corrupti laborum?
+            Exercitationem, numquam repellat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quia
+            voluptatem odio nostrum! Eos cumque, modi dolor ea laborum aspernatur corporis! Earum, nihil distinctio amet
+            at debitis inventore laudantium natus.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ratione soluta hic minus unde iusto libero
+            velit corporis vero mollitia, minima voluptate esse quisquam exercitationem quidem necessitatibus amet
+            distinctio voluptatum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptatibus quam expedita facere velit et
+            aliquam fugiat? Veritatis, repudiandae consequatur corporis quos obcaecati blanditiis sint tempore
+            perferendis beatae, voluptatibus ullam.</p>
+    </main>
+</body>
+
+</html>

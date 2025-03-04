@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+footer {
+/*     display: flex;
+    justify-content: center;
+    height: 96vh;
+ */
+}
+body {
+    font-size: 18px;
+    background-color: aliceblue;
+
+}
+.attribution {
+    align-self: flex-end;
+}
+
+
+
+
+/* Stylçe card  abaixo */
+
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    padding: 30px;
+    background-color: white;
+}
+img {
+    display: ;
+}
+article > h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 13px;
+    border-radius: 10px;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+}
+#continue {
+    padding: 20px;
+    border-radius: 50px;
+    color: ;
+}
+
+.container {
+    display: flex;
+    height: 96vh;
+    width: 96vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.env {
+    display: flex;
+    gap: 13px;
+}
