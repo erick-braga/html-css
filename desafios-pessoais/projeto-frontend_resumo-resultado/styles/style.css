@@ -1,5 +1,32 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: hanken;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+    --font: hanken;
+
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,18 +36,17 @@
 }
 
 footer {
-/*     display: flex;
+    /*     display: flex;
     justify-content: center;
     height: 96vh;
  */
 }
+
 body {
+    font-family: var(--font);
     font-size: 18px;
     background-color: aliceblue;
 
-}
-.attribution {
-    align-self: flex-end;
 }
 
 
@@ -28,20 +54,28 @@ body {
 
 /* Stylçe card  abaixo */
 
+
+
 article {
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
     padding: 30px;
     background-color: white;
+    transition: width 0.5s, height 0.5s ease-in-out;
 }
-img {
-    display: ;
+
+
+main {
+    transition: width 0.5s, height 0.5s ease-in-out;
+
 }
-article > h2 {
+article>h2 {
     font-size: 18px;
     margin-bottom: 20px;
+    color: var(--dark-gray-blue);
 }
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -50,18 +84,27 @@ article > h2 {
     border-radius: 10px;
     flex-flow: row nowrap;
     align-items: center;
-    
-}
-#continue {
-    padding: 20px;
-    border-radius: 50px;
-    color: ;
+
 }
 
+#continue {
+    padding: 15px;
+    border-radius: 50px;
+    
+
+}
+#continue:hover {
+     background-image: linear-gradient(to bottom, var(--light-royal-blue), var(--light-slate-blue));
+
+}
+button:hover {
+    transition-duration: 5s;
+
+}
 .container {
     display: flex;
     height: 96vh;
-    width: 96vw;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 }
@@ -70,3 +113,37 @@ article > h2 {
     display: flex;
     gap: 13px;
 }
+
+#continue {
+    background-color: var(--dark-gray-blue);
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*  estilizando cada card */
+
+.c1 {
+    color: var(--light-red);
+    background-color: hsla(0, 100%, 67%, 0.082);;
+}
+.c2 {
+    color: var(--orangey-yellow);
+    background-color: hsla(39, 100%, 56%, 0.068);;
+}
+.c3 {
+    color: var(--green-teal);
+    background-color: hsla(166, 100%, 37%, 0.048);;
+}
+.c4 {
+    color: var(--cobalt-blue);
+    background-color: hsla(234, 85%, 45%, 0.062);
+}
+
+.strong {
+    color: black; 
+    font-weight: bold
+}
+
+
+hsl(166, 100%, 37%);

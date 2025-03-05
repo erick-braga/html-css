@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+:root {
+    --font: hanken;
+
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.circle {
+    padding: 20px;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--light-royal-blue), transparent);
+}
+
+#number {
+    font-size: 3em;
+    
+}
+#number2 {
+    color: var(--light-lavender);
+}
+main {
+    padding: 30px 0px;
+    border-radius: 0px 0px 40px 30px;
+    text-align: center;
+    color: white;
+}
+main > h1 {
+    color: var(--light-lavender);
+    font-size: 1.1em;
+}
+#text-circle{
+    display: block;
+    margin: auto;
+    width: 90%;
+    font-size: 0.9em;
+    color: var(--light-lavender);
+}
+#quality {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+main {
+    background-image: linear-gradient(to top, var(--light-royal-blue), var(--light-slate-blue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
