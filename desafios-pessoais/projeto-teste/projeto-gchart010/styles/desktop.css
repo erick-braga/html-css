@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+#image-phone {
+    display: none;
+}
+
+#image-desktop {
+    display: flex;
+    height: 100vh;
+width: 40vw;
+}
+
+#image-desktop > img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+
+    height: 100vh;
+}
+
+.logo-form {
+    height: 100%;
+    width: 60vw;
+    
+   
+}
+
+.logo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+#form {
+    width: 70%;
+    
+ 
+}
+.teste {
+    width: 70%;
+}
+
+#form>h1 {
+    font-size: 5rem;
+    text-align: left;
+
+
+}
+#form > p {
+    text-align: left;
+
+}

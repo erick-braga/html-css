@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+
+        #item-1 {
+            background-color: aqua;
+
+        }
+
+        #item-2 {
+            background-color: bisque;
+        }
+
+        #grid3>div:nth-child(odd) {
+            background-color: rgba(248, 42, 32, 0.62);
+        }
+
+        #grid3>div:nth-child(even) {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>11 A &#41</h1>
+    <div class="grid">
+        <div id="item-1">200px</div>
+        <div id="item-2">75px</div>
+    </div>
+    <br>
+
+    <h1>11 B &#41</h1>
+    <div style="
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;">
+
+        <div style="background-color: rgb(239, 111, 19);">
+            50px
+        </div>
+
+        <div style="background-color: rgb(194, 255, 255);">
+            1fr
+        </div>
+
+        <div style="background-color: rgb(239, 111, 19);">
+            75px
+        </div>
+    </div>
+    <br>
+
+    <h1>11 C &#41</h1>
+    <div id="grid3" style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    ">
+
+
+        <div>col</div>
+        <div>col</div>
+        <div>col</div>
+        <div>col</div>
+        <div>col</div>
+        <div>col</div>
+        <div>col</div>
+        <div>col</div>
+
+    </div>
+    <br>
+</body>
+
+</html>

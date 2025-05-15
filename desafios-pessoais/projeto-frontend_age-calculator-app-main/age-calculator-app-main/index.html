@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css" media="all">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <main>
+
+      <section id="input">
+        <div>
+          <label for="iday" class="label">Day</label><br>
+          <input type="number" name="day" id="iday" required min="1" max="31" placeholder="DD"><!-- DD --></input>
+          <br>
+          <p style="display: inline;" class="error-text"></p>
+        </div>
+
+        <div>
+          <label for="imonth" class="label">Month</label><br>
+          <input type="number" name="day" id="imonth" required min="1" max="12" placeholder="MM"><!-- MM --></input>
+          <br>
+          <p style="display: inline;" class="error-text"></p>
+        </div>
+        <div>
+          <label for="iyear" class="label">Year</label><br>
+          <input type="number" name="day" id="iyear" required min="1930" max="2030"
+            placeholder="YYYY"><!-- YYYY --></input>
+          <br>
+          <p style="display: inline;" class="error-text"></p>
+        </div>
+      </section>
+      <section id="but">
+        <hr style="
+        width: 80%;
+        height: 1px;
+        margin: 20px;
+        background-color: hsl(0, 0%, 94%);
+        ">
+        <button onclick="Show()"><img src="assets/images/icon-arrow.svg" alt=""></button>
+      </section>
+
+      <section id="results">
+        <p><span class="info" id="y">--</span> years</p>
+        <p><span class="info" id="m">--</span> months</p>
+        <p><span class="info" id="d">--</span> days</p>
+
+
+      </section>
+    </main>
+  </div>
+
+
+  <script src="index.js"></script>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
